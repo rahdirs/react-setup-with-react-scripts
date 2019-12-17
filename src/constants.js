@@ -1,0 +1,1 @@
+﻿export const DAEMON = '@@saga-injector/daemon';

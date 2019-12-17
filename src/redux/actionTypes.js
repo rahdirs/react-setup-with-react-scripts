@@ -1,0 +1,3 @@
+﻿export const UPSERT_RULE = "UPSERT_RULE";
+export const UPSERT_REQUIREMENTS = "UPSERT_REQUIREMENTS";
+export const DELETE_RULE = "DELETE_RULE";

@@ -1,0 +1,25 @@
+﻿.welcomeWidget {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    align-self: center;
+    background-color: rgb(81,151,198);
+    height: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 190px;
+}
+
+.welcomeWidget p {
+    width: 100%;
+    align-self: flex-end;
+    margin-bottom: 2px;
+}
+
+.welcomeWidget .glyphicon {
+    font-size: 12px;
+}
+
+.red {
+    color: rgb(133,0,3);
+}

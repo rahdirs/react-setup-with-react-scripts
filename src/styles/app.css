@@ -1,0 +1,307 @@
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+
+body, #root, .container-fluid {
+    min-height: 100%;
+    margin: 0;
+    height: 100vh;
+}
+
+
+.site-header {
+    height: 65px;
+    max-height: 65px;
+    min-height: 65px;
+    vertical-align: middle;
+}
+    .site-header > div {
+        height: 48px;
+        align-self: center;
+        display: flex;
+        align-content: center;
+    }
+    .site-header h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fffff9;
+        font-size: 26px;
+        font-weight: normal;
+        margin: 0;
+        vertical-align: middle;
+        align-self: center;
+    }
+
+    .site-header h1 a {
+        text-decoration: none;
+        color: #fffff9;
+    }
+
+    .site-header .widget-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+.header-taskbar {
+    background-color: #FAFAFA;
+    border: solid 1px #E5E5E5;
+    color: #6F6F6F;
+    display: flex;
+    align-content: center;
+}
+
+.header-taskbar > div {
+    align-content: center;
+    align-self: center;
+}
+
+.left-most-column-width-cap {
+    max-width: 262px;
+}
+
+#app-shortcuts-container {
+    max-width: 233px;
+}
+
+#search-bar-container {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+    align-items: center;
+}
+
+    #search-bar-container nav {
+        display: flex;
+    }
+
+    .nav-toggle-container {
+        display: none;
+        margin-right: 15px;
+    }
+
+.title-container {
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    .nav-toggle-container {
+        display: inline-block;
+    }
+
+    .non-mobile-menu-toggle-display-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 475px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .title-container {
+        width: 100% !important;
+    }
+
+    .title-container h1{
+        margin: auto;
+    }
+
+    .nav-toggle-container {
+        margin-right: initial;
+    }
+}
+
+.nav-toggle-container {
+    align-self: center;
+}
+
+    .nav-toggle-container .btn-default {
+        color: #006302;
+        background-image: none;
+        background-color: white;
+    }
+
+
+
+.non-mobile-menu-toggle-display-toggle {
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    font-size: 12px !important;
+}
+
+.non-mobile-menu-toggle-display-toggle span {
+    position: relative;
+    bottom: 1px;
+}
+
+.nav-app-shortcuts .collapsed-appshortcuts {
+    position: relative;
+}
+
+#app-shortcuts-container .collapsed-appshortcuts .overlay, .nav-app-shortcuts .collapsed-appshortcuts .overlay {
+    display: none;
+    position: absolute;
+    left: 62px;
+    top: 1px;
+    border: solid 1px #ccc;
+    background-color: #efefef;
+    z-index: 9999;
+    padding-left: 5px;
+    min-width: 162px;
+}
+
+#app-shortcuts-container .collapsed-appshortcuts img {
+    cursor: pointer;
+    margin-left: -7px;
+}
+
+.nav-app-shortcuts .collapsed-appshortcuts img {
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+#app-shortcuts-container .collapsed-appshortcuts:hover .overlay, .nav-app-shortcuts .collapsed-appshortcuts:hover .overlay {
+    display: block;
+}
+
+    #app-shortcuts-container .collapsed-appshortcuts:hover .overlay ul#app-shortcuts li, .nav-app-shortcuts .collapsed-appshortcuts:hover .overlay ul#app-shortcuts li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+.overlay #app-shortcuts {
+    width: 162px !important;
+}
+
+/* Overriding react-datepicker - Begin */
+.react-datepicker-wrapper, .react-datepicker__input-container {
+    width: 100%
+}
+
+/* Overriding react-datepicker - End */
+
+.widget-container .widget-portrait .media {
+    margin-right: -4px;
+    margin-top: 11px;
+}
+
+.requestFeatureLink, .requestFeatureLink:hover, .requestFeatureLink:active, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:active {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-top: 14px;
+}
+
+    .requestFeatureLink i, .requestFeatureLink:hover i, .requestFeatureLink:active i, .dropdown-toggle i, .dropdown-toggle:hover i, .dropdown-toggle:active i, .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:active {
+        color: #6f6f6f !important;
+    }
+
+.react-bootstrap-table-pagination .react-bs-table-sizePerPage-dropdown .dropdown-toggle {
+    color: #fff !important;
+}
+
+.react-bootstrap-table-pagination .react-bs-table-sizePerPage-dropdown .dropdown-menu {
+    text-align: center !important;
+}
+
+.dropdown-toggle, .dropdown-toggle:hover {
+    margin-right: 10px;
+}
+
+.convergint-red-text {
+    color: rgba(153,0,0,1);
+}
+
+.convergint-red, .convergint-red:active {
+    background-color: rgba(153,0,0,1) !important;
+}
+
+    .convergint-red:hover {
+        background-color: rgba(153,0,0,0.5) !important;
+    }
+
+#root {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+/* Animations */
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(101%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(101%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(101%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(101%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+/* * */
+
+/* Quil RTE */
+.ql-size-large {
+    font-size: 1.5em !important;
+}
+.ql-size-small {
+    font-size: 0.75em !important;
+}
+/************/
+
+#languageFooter {
+    justify-content: flex-end;
+    display: flex;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: #990000;
+}
+
+#languageFooter select {
+    position: relative;
+    right: 5px;     
+}
+
+#mobile-only-header-bar{
+    display: flex;
+    align-items: center;
+}
+
+.displayViewContainer > div.row {
+    margin-bottom: 75px;
+}
